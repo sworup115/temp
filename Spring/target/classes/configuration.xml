@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!--   <bean id="tur"  class = "com.te.Spring.TurboEngine">
+    <property name="name" value=" audi"></property>
+    <property name="capacity" value="3000"></property>
+    </bean>
+    
+    <bean id="eng"  class = "com.te.Spring.Engine"/>
+    
+    <bean id="car"  class = "com.te.Spring.Car">
+    <property name="g" ref="tur"></property>
+    <property name="name" value="farari"></property>
+    
+    
+    </bean> -->
+   <!--  <bean id="mid" class="com.te.casestudy.Midatake">
+    <constructor-arg value="95" ></constructor-arg>
+    <constructor-arg value="helio"></constructor-arg>
+    <property name="price" value="10000"></property>
+    </bean>
+    <bean id="c" class="com.te.casestudy.Mobile">
+    <constructor-arg  ref="mid"></constructor-arg>
+    <constructor-arg value="12"></constructor-arg>
+    
+    </bean> -->
+    <bean class="com.te.Spring.autowair.Laptop" autowire="constructor"> 
+    </bean>
+    <bean id="b" class="com.te.Spring.autowair.Battery"></bean>
+    <bean id="s" class="com.te.Spring.autowair.Screen"></bean>
+    <bean id="hd1" class="com.te.Spring.autowair.HardDisk">
+    <property name="name" value="seasham"></property>
+    </bean>
+    <bean id="harddick" class="com.te.Spring.autowair.HardDisk">
+     <property name="name" value="sanddisk"></property>
+     
+     
+    </bean>
+    
+    
+
+</beans>
